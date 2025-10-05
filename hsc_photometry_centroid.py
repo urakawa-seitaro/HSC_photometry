@@ -217,8 +217,8 @@ def main():
     # 出力文字列の作成: 日時(UT), RA, Dec, X(初期), Y(初期), X(重心), Y(重心), フィルター, 等級, 等級誤差
     output_line = (
         f"{observation_time_utc}\t{output_ra}\t{output_dec}\t"
-        f"{initial_x:.3f}\t{initial_y:.3f}\t"
-        f"{final_x_center:.3f}\t{final_y_center:.3f}\t" # ★光度重心を追加★
+        f"{initial_x + 1 :.3f}\t{initial_y + 1:.3f}\t"
+        f"{final_x_center + 1 :.3f}\t{final_y_center + 1 :.3f}\t" # ★光度重心を追加★
         f"{filter_name}\t{magnitude:.3f}\t{magnitude_error:.3f}\n"
     )
 
@@ -230,8 +230,8 @@ def main():
         f.write(output_line)
 
     print(f"\n測光が完了しました。")
-    print(f"  初期座標 (X, Y): {initial_x + 1:.3f}, {initial_y + 1:.3f}")
-    print(f"  光度重心 (X, Y): {final_x_center +1 :.3f}, {final_y_center + 1:.3f}")
+    print(f"  初期座標 (X, Y): {initial_x:.3f}, {initial_y:.3f}")
+    print(f"  光度重心 (X, Y): {final_x_center:.3f}, {final_y_center:.3f}")
     print(f"  測光等級: {magnitude:.3f}")
     print(f"  等級誤差: {magnitude_error:.3f}")
     print(f"結果は '{output_filename}' に出力されました。")
