@@ -230,8 +230,8 @@ def main():
         f.write(output_line)
 
     print(f"\n測光が完了しました。")
-    print(f"  初期座標 (X, Y): {initial_x:.3f}, {initial_y:.3f}")
-    print(f"  光度重心 (X, Y): {final_x_center:.3f}, {final_y_center:.3f}")
+    print(f"  初期座標 (X, Y): {initial_x + 1:.3f}, {initial_y + 1:.3f}")
+    print(f"  光度重心 (X, Y): {final_x_center +1 :.3f}, {final_y_center + 1:.3f}")
     print(f"  測光等級: {magnitude:.3f}")
     print(f"  等級誤差: {magnitude_error:.3f}")
     print(f"結果は '{output_filename}' に出力されました。")
