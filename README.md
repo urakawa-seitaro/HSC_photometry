@@ -14,7 +14,7 @@ matplotlib-base=3.9.3
 
 ＃使い方
 
-./create_target.py 　#処理するfitsファイルと測光したい天体の座標を記入
+./create_target.py 　#処理するfitsファイルの自動記入と測光したい天体の座標を記入
 
 実行後 targets.txt ができあがる。
 
