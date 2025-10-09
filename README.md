@@ -26,6 +26,6 @@ ra,decをX,Y座標に変換。X,Y座標を中心に±25pixel(50X50pixel)の領�
 
 光度重心のX,Y座標に対してaperture測光。測光半径は12pixel
 
-誤差はhdu[3].dataのvarianceを利用
+誤差はhdu[3].dataのvarianceを利用　<= 新しい誤差算出方法。COIASでも実装予定。
 
 出力X,Y座標はds9表記
