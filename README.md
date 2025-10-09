@@ -14,6 +14,8 @@ matplotlib-base=3.9.3
 
 ＃使い方
 
+カレントディレクトリに解析したいfits画像（warp画像）を置いておく。
+
 ./create_target.py 　#処理するfitsファイルの自動記入と測光したい天体の座標を記入
 
 実行後 targets.txt ができあがる。
