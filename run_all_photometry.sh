@@ -1,5 +1,5 @@
 #!/bin/bash
-#既存の結果があったら消しておく
+#既存の結果があったら消しておこう
 rm photometry_results_centroid.txt
 
 # 実行するPythonスクリプト名
