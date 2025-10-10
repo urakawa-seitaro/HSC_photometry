@@ -1,4 +1,6 @@
 #!/bin/bash
+#既存の結果があったら消しておく
+rm photometry_results_centroid.txt
 
 # 実行するPythonスクリプト名
 PYTHON_SCRIPT="hsc_photometry_centroid.py"
